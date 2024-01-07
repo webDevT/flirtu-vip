@@ -131,11 +131,14 @@ a:hover
   &.best-price
     color: #fff
     border: none
-    border-radius: 0
     background: #ff0
     color: red
     font-weight: 700
-    border: 1px solid #000
+    border: 1px solid #7F7F7F
+.item.active
+    .best-price
+        border: 1px solid #297245
+    
 
 .item__footer
   color: #adb0b6
@@ -253,6 +256,7 @@ a:hover
 //start special offer style 
 .special-sale
     text-align: center
+    padding-top: 50px
 //end special offer style
 .timer
     display: flex
@@ -267,7 +271,7 @@ a:hover
     margin-left: 5px 
     margin-right: 5px
 .timer-text 
-    font-size: 16px
+    font-size: 14px
 .timer-wrapper
     margin-bottom: 15px
 .special-sale__title
@@ -280,6 +284,7 @@ a:hover
     padding-right: 10px
     margin-bottom: 15px
 .special-sale--2
+    padding-top: 80px
     .special-sale__title
         font-size: 22px 
     .timer
@@ -312,7 +317,6 @@ a:hover
         li 
             margin-top: 10px
 .special-sale--2
-    padding-top: 30px
     padding-bottom: 30px
     .special-sale__title 
         margin-bottom: 10px
@@ -327,7 +331,15 @@ a:hover
     display: flex 
     align-items: center 
     justify-content: center
-    padding-bottom: 20px
+    padding-bottom: 10px
+    padding-top: 10px
+    background: rgba(#F2F2F2, .7)
+    backdrop-filter: blur(10px) 
+    box-shadow: 0px 1px 5px rgba(#000, 0.1)
+    position: absolute 
+    top: 0 
+    left: 0 
+    width: 100vw
 .logo 
     display: flex 
     justify-content: center 
